@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3D AR Model</title>
-  <!-- Import model-viewer knihovny -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
     body {
@@ -19,7 +18,6 @@
       width: 100%;
       max-width: 600px;
       height: 80vh;
-      border: 1px solid #ccc;
       border-radius: 12px;
       background-color: white;
     }
@@ -27,12 +25,14 @@
 </head>
 <body>
   <model-viewer 
-    src="camels_respite.glb"
-    ios-src="Camels_Respite.usdz"
+    src="blazing_oasis.glb"
+    ios-src="blazing_oasis.usdz"
     ar
+    ar-scale="auto"
     ar-modes="scene-viewer quick-look webxr"
     camera-controls
     auto-rotate
+    reveal="interaction"
     background-color="#ffffff">
   </model-viewer>
 </body>
